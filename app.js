@@ -16,3 +16,9 @@ app.get("/joke", function(req, res){
     var joke = "What do you call a dog that does magic tricks? A labracadabrador.";
     res.send(joke);
 });
+
+// after running the app.js command in the terminal, you can add '/random_num' to the url preview and it will display a random number below.
+app.get("/random_num", function(req, res){
+  var num = Math.floor(Math.Random() * 10) +1;
+    res.send("Your lucky number is " + num);
+});
